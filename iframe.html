@@ -1,68 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Video Player</title>
-    <style>
-        @keyframes borderColorChange {
-            0% { border-color: white; }
-            100% { border-color: #25D366; }
-        }
-        
-        .container {
-            position: relative;
-            display: inline-block;
-            width: 100%;
-        }
-        
-        .join-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 1px 6px;
-            border: 2px solid white;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 12px;
-            background: rgba(26, 26, 26, 0.5);
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
-            animation: borderColorChange 0.6s infinite alternate;
-        }
-        
-        iframe {
-            width: 100%;
-            height: 350px;
-            border: 5px solid;
-        }
-    </style>
+<!DOCTYPE html><html><head>
+
+
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
+<meta content='never' name='referrer'/>
 <body>
-    <div class="container">
-        <a href="https://whatsapp.com/channel/0029VaivAoX4Y9llBm8rog01" target="_blank" class="join-button">
-            &nbsp; JOIN US &nbsp;
-        </a>
-        <iframe allow="encrypted-media;fullscreen" controls frameborder="5" gesture="media" 
-                id="videoFrame" loading="lazy" name="myiFrame" 
-                sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts" 
-                scrolling="no">
-        </iframe>
-    </div>
+<div class='main section' id='main'><div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts hfeed container'>
+<article class='post-outer-container'>
+<div class='post-outer'>
+<div class='post'>
+<script type='application/ld+json'>{
+ </script>
+<div class='post-body entry-content float-container' id='post-body-524878018853878510'>
+ 
+<body>
+ 
 
-    <script>
-        // Function to get the value of a URL parameter
-        var urlParams = new URLSearchParams(window.location.search);
-        var videoLink = urlParams.get('vivo');
 
-        // If a video URL is provided in the parameter, set it as the iframe's source
-        if (videoLink) {
-            document.getElementById('videoFrame').src = videoLink;
-        } else {
-            console.error('Video link parameter "vivo" is missing in the URL.');
+
+
+
+
+
+<iframe class="vidio" id="vidio"  margin src="https://b4xsportslivetv.blogspot.com" sandbox="allow-forms allow-same-origin allow-scripts" scrolling="no" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; #autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+</div>
+<div class="konten-atas">
+
+
+
+
+
+
+<div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- Konten di atas -->
+
+
+
+  
+	
+  <script>
+    var iframe = document.getElementById('vidio');
+    var offlineMessage = document.getElementById('offline-message');
+
+    iframe.addEventListener('load', function() {
+      // Fungsi ini akan dipanggil saat iframe selesai dimuat
+
+      // Periksa status koneksi internet
+      var online = navigator.onLine;
+
+      if (!online) {
+        // Tampilkan pesan jika tidak terhubung
+        offlineMessage.style.display = 'block';
+        iframe.style.display = 'none';
+      }
+    });
+
+    // Periksa status koneksi saat memuat halaman
+    var online = navigator.onLine;
+
+    if (!online) {
+      // Tampilkan pesan jika tidak terhubung
+      offlineMessage.style.display = 'block';
+      iframe.style.display = 'none';
+    }
+  </script>
+<script>
+        // Mendapatkan parameter URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const file = urlParams.get('b4x');
+
+        // Mengganti nilai src iframe
+        if (file) {
+            const iframe = document.getElementById('vidio');
+            iframe.src = file;
         }
     </script>
+  
+  
+  
+  <a href="https://whatsapp.com/channel/0029Va6V441BqbrA2NZpkH2z" target="_blank">
+<span style="position: absolute; z-index: 100; top: 10px; left: 10px; height: 25px; width: 100px; color: rgb(204, 204, 204); border: 2px solid rgb(204, 204, 204); padding: 1px 0px; border-radius: 10x; text-align: center;">
+Join us
+</span>
+</a>
+
+
+  <a href="javascript:document.location.reload();" onclick="window.open('https://whatsapp.com/channel/0029Va6V441BqbrA2NZpkH2z'); return false;" target="_blank">
+    <span style="position:absolute;z-index: 10; top:10px; right:70px; height:20px; width:55px; ">
+        
+        <img src="https://i.postimg.cc/DwHRs3xd/New-Project-18-55-C22-AF.png" alt="Logo" style="height: 60px; width: 100px;"> 
+        
+        
+    </span>
+</a>
+
+
+</script>
 </body>
 </html>
 
+
+
+</body>
