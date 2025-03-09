@@ -1,0 +1,134 @@
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>TG_@Cricinsider365</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.1/controls.min.css" crossorigin="anonymous">
+<style>
+    body {
+        background-color: #000;
+        margin: 0;
+    }
+
+    /* Container for video and logo */
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+    /* Style for the logo */
+    .logo {
+        position: absolute;
+        top: 10px; /* Adjust vertical position */
+        left: 10px; /* Adjust horizontal position */
+        z-index: 1; /* Ensure the logo appears above the video */
+        max-width: 120px; /* Set maximum width for the logo */
+        max-height: 120px; /* Set maximum height for the logo */
+        pointer-events: none; /* Prevent interference with video controls */
+    }
+
+    .shaka-spinner-container {
+        display: none;
+    }
+
+    .uc {
+        pointer-events: none;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Video container -->
+    <div class="video-container">
+        <!-- Logo inside the video -->
+        <img src="https://i.postimg.cc/ZnkCfsQ0/water2.png" alt="Logo" class="logo">
+
+        <!-- Video player -->
+        <div data-shaka-player-container style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            <video autoplay muted data-shaka-player id="video" poster="https://i.postimg.cc/qB5Zrtrf/vivosports-poster.png" style="width:100%; height:100%;"></video>
+        </div>
+    </div>
+
+    <script>
+   //<!--
+      if (window.top !== window.self) {
+  window.addEventListener("DOMContentLoaded", function () {
+    document.body.innerHTML = '';
+    const _0x124786 = document.createElement("div");
+    _0x124786.id = "message";
+    _0x124786.textContent = "Ab to copy mat kar chutiye By @Cricinsider365";
+    _0x124786.style.color = "#fff";
+    _0x124786.style.backgroundColor = "#000";
+    _0x124786.style.position = "fixed";
+    _0x124786.style.top = "50%";
+    _0x124786.style.left = "50%";
+    _0x124786.style.transform = "translate(-50%, -50%)";
+    _0x124786.style.padding = "20px";
+    _0x124786.style.borderRadius = "10px";
+    _0x124786.style.textAlign = "center";
+    _0x124786.style.fontFamily = "Arial, sans-serif";
+    _0x124786.style.fontSize = "20px";
+    document.body.appendChild(_0x124786);
+  });
+}
+async function init() {
+  const _0x52178 = document.getElementById("video");
+  const _0x531b67 = _0x52178.ui;
+  const _0x3b3c06 = _0x531b67.getControls();
+  const _0x18a6d3 = _0x3b3c06.getPlayer();
+  _0x18a6d3.configure({
+    'drm': {
+      'clearKeys': {
+        '7641daa5bacfbb61936c40a221c9e78e': "5732dd242f28338e909dc06cb1a1e5a2"
+      }
+    }
+  });
+  _0x531b67.configure({
+    'controlPanelElements': ["play_pause", "mute", "volume", "spacer", "time_and_duration", "quality", "fullscreen", "overflow_menu"],
+    'volumeBarColors': {
+      'base': "rgba(0, 0, 255, 1)",
+      'level': "rgb(0, 255, 0)"
+    },
+    'seekBarColors': {
+      'base': "rgb(255, 0, 0)",
+      'buffered': "rgb(255, 255, 0)",
+      'played': "rgba(0, 128, 128, 1)"
+    }
+  });
+  window.player = _0x18a6d3;
+  window.ui = _0x531b67;
+  _0x18a6d3.addEventListener("error", onPlayerErrorEvent);
+  _0x3b3c06.addEventListener("error", onUIErrorEvent);
+  try {
+    await _0x18a6d3.load("https://live3.shoq.com.pk/live/eds/Geo_Super/DASH/Geo_Super.mpd");
+    console.log("The video has now been loaded!");
+  } catch (_0x2c942d) {
+    onPlayerError(_0x2c942d);
+  }
+}
+function onPlayerErrorEvent(_0x39272f) {
+  onPlayerError(_0x39272f.detail);
+}
+function onPlayerError(_0x248bbf) {
+  console.error("Error code", _0x248bbf.code, "object", _0x248bbf);
+}
+function onUIErrorEvent(_0x475c00) {
+  onPlayerError(_0x475c00.detail);
+}
+function initFailed() {
+  console.error("Unable to load the UI library!");
+}
+document.addEventListener("shaka-ui-loaded", init);
+document.addEventListener("shaka-ui-load-failed", initFailed);
+if (confirm("Join For More Links!!")) {
+  window.location.href = "https://t.me/vivosports";
+}
+      //-->
+
+    </script>
+</body>
+</html>
